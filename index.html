@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Film Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" defer src="script-movies.js"></script>
+    <script type="text/javascript" defer src="script.js"></script>
+</head>
+<body id="body" class="movies">
+    <header class="header">
+        <div class="header-image">
+            <h1>Film Finder</h1>
+        </div>
+    </header>
+        <nav class="nav">
+            <ul class="site-menu">
+                <div>
+                    <h3>Please select your search criteria:</h3>
+                </div>
+                <div class="radioButtons" id="radio-button-list">
+                    <div>
+                    <input class="radio" type="radio" id="all-movies" name="movie_selection" value="AllMovies">
+                        <label for="all-movies">All Movies</label><br>
+                    </div>
+                    <div>
+                    <input class="radio"  type="radio" id="new-movies" name="movie_selection" value="NewMovies">
+                        <label for="new-movies">Latest Movies</label><br>
+                    </div>
+                    <div>
+                    <input class="radio"  type="radio" id="avenger" name="movie_selection" value="Avenger">
+                        <label for="avenger">Avenger</label><br>
+                    </div>
+                    <div>
+                    <input class="radio"  type="radio" id="x-men" name="movie_selection" value="XMen">
+                        <label for="x-men">X-Men</label><br>
+                    </div>
+                    <div>
+                    <input class="radio"  type="radio" id="princess" name="movie_selection" value="Princess">
+                        <label for="princess">Princess</label><br>
+                    </div>
+                    <div>
+                    <input class="radio"  type="radio" id="batman" name="movie_selection" value="Batman">
+                        <label for="batman">Batman</label><br><br>
+                    </div>
+                </div>
+                <div>
+                    <h3>Or search on title: </h3>
+                </div>
+                <div id="search-bar" class="search-bar">
+                    <input id="myInput" type="text" placeholder="Search..">
+                </div>
+            </ul>
+        </nav> <br><br>
+    <main class="main">
+        <ul id="all-movies-list" class="container-grid">
+
+        </ul>
+    </main>
+     <footer class="footer">
+        <div>
+            <h3>Search on title: </h3>
+        </div>
+        <div id="search-bar-footer" class="search-bar">
+            <input id="myInput-footer" type="text" placeholder="Search..">
+        </div>
+    </footer>
+</body>
+</html>
